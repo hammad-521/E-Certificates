@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 96%;
+}
+
+.logo {
+  display: block;
+  width: 250px;
+  cursor: pointer;
+}
+
+.start-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.start-action a {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.start-action a:hover {
+  transform: translateY(-10px);
+}
+
+/* admin auth styles */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+}
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.auth {
+  margin-top: 30px;
+}
+.auth .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+.auth .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #c7bebe;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.policy {
+  display: flex;
+  align-items: center;
+}
+.auth h3 {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input {
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4d9ad7;
+  cursor: pointer;
+}
+.input-box.button input:hover {
+  background: #dce8fc;
+  color: black;
+  border: 1px solid #4d9ad7;
+}
+.auth .text h3 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+.auth .text h3 a {
+  color: #122853;
+  text-decoration: none;
+}
+.auth .text h3 a:hover {
+  text-decoration: underline;
+}
+
+/* admin dashboard styles */
+
+.dashboard {
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #4d99d73d;
+  padding: 20px;
+}
+
+.sidebar ul {
+  margin-top: 20px;
+}
+.sidebar ul li a {
+  padding: 10px;
+  display: block;
+  border-radius: 6px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #4d9ad7;
+}
+.content {
+  flex: 1;
+  overflow: scroll;
+}
+
+.profile {
+  margin-right: auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: #4d99d73d;
+  padding: 20px;
+}
+.profile button {
+  padding: 10px 25px;
+  background-color: #4d9ad7;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: auto;
+}
+.sidebar ul li {
+  margin-bottom: 4px;
+}
+.sidebar ul li a.active {
+  background-color: #4d9ad7;
+}
+
+.dashboard-content {
+  display: none;
+
+  padding: 20px;
+}
+.dashboard-content.active,
+.modify-dash {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* certificate forms */
+
+.certificate-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  gap: 20px;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.form-group {
+  width: 48%;
+}
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #c6c6c6;
+}
+
+.certificate-form div select,
+.appoint {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+}
+
+.address-area {
+  width: 100%;
+}
+
+.address-area textarea {
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+}
+
+.apply-btn {
+  padding: 10px 25px;
+  background-color: #4d9ad7;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+/* check status styles */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  min-width: 200px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* book appointment form */
+
+.appointment-form {
+  margin-top: 80px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.appointment-form label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.book-appointment-btn {
+  padding: 10px 25px;
+  background-color: #4d9ad7;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table-container {
+  max-width: 100%;
+}
+
+/* UPDATED DOWN*/
+
+.action-buttons {
+  display: flex;
+  gap: 4px;
+}
+.action-buttons button,
+#green-btn {
+  padding: 5px 10px;
+  border: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+}
+
+#red-btn {
+  background-color: red;
+  color: white;
+}
+/* UPDATED UP */
+
+.mission li {
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.mission {
+  /* margin: 10px 25px; */
+  width: 88%;
+  margin: 0 auto;
+}
+
+.mission h5 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #122853;
+}
+
+.mission li {
+  padding: 3px;
+  color: #535353;
+}
+
+.mission p {
+  margin: 7px 0;
+  color: #535353;
+}
+
+.center h1 {
+  text-align: center;
+  font-size: 38px;
+  color: #122853;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
